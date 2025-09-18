@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "Health Potion",
+    "type": "consumable",
+    "effect": "restoreHp",
+    "value": 50,
+    "price": 10,
+    "description": "Restores 50 HP"
+  },
+  {
+    "id": 2,
+    "name": "Mana Potion",
+    "type": "consumable",
+    "effect": "restoreMp",
+    "value": 30,
+    "price": 15,
+    "description": "Restores 30 MP"
+  },
+  {
+    "id": 3,
+    "name": "Iron Sword",
+    "type": "weapon",
+    "atk": 10,
+    "price": 50,
+    "description": "A basic iron sword"
+  },
+  {
+    "id": 4,
+    "name": "Leather Armor",
+    "type": "armor",
+    "def": 5,
+    "price": 40,
+    "description": "Basic leather armor"
+  }
+]

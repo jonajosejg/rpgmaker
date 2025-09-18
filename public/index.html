@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Maker MZ-inspired Demo</title>
+    <script src="https://pixijs.download/release/pixi.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1>RPG Maker MZ-inspired</h1>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <p>Loading game assets...</p>
+        </div>
+    </div>
+
+    <div id="game-container" style="display: none;"></div>
+
+    <div id="ui-container" style="display: none;">
+        <div class="player-stats">
+            <h2>Adventurer's Stats</h2>
+            <div class="stats">
+                <p>Level: <span id="level">1</span></p>
+                <p>HP: <span id="hp">50</span>/<span id="max-hp">50</span></p>
+                <p>MP: <span id="mp">30</span>/<span id="max-mp">30</span></p>
+                <p>Gold: <span id="gold">100</span></p>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="btn-heal">Heal (10g)</button>
+            <button id="btn-level">Level Up (50g)</button>
+            <button id="btn-inventory">Inventory</button>
+            <button id="btn-save">Save Game</button>
+        </div>
+    </div>
+
+    <div id="chat-container" style="display: none;">
+        <div class="chat-header">
+            <h2>Chat</h2>
+            <button id="btn-toggle-chat">−</button>
+        </div>
+        <div id="chat-messages"></div>
+        <div class="chat-input-container">
+            <input type="text" id="chat-input" placeholder="Type your message..." maxlength="100">
+            <button id="btn-send-chat">Send</button>
+        </div>
+    </div>
+
+    <div id="menu-container" style="display: none;">
+        <div class="menu-content">
+            <h1>Game Menu</h1>
+            <div class="menu-options">
+                <button id="btn-resume">Resume Game</button>
+                <button id="btn-new-game">New Game</button>
+                <button id="btn-load-game">Load Game</button>
+                <button id="btn-settings">Settings</button>
+                <button id="btn-exit">Exit Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/client.js"></script>
+</body>
+</html>

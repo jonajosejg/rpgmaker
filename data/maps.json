@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "name": "Starting Village",
+    "width": 25,
+    "height": 19,
+    "tileset": "village.png",
+    "npcs": [1, 2, 3],
+    "enemies": [],
+    "connections": {
+      "north": 2,
+      "east": 3
+    }
+  },
+  {
+    "id": 2,
+    "name": "Forest Path",
+    "width": 20,
+    "height": 15,
+    "tileset": "forest.png",
+    "npcs": [4],
+    "enemies": [1, 2],
+    "connections": {
+      "south": 1
+    }
+  },
+  {
+    "id": 3,
+    "name": "Cave Entrance",
+    "width": 15,
+    "height": 15,
+    "tileset": "cave.png",
+    "npcs": [5],
+    "enemies": [3, 4],
+    "connections": {
+      "west": 1,
+      "east": 4
+    }
+  }
+]

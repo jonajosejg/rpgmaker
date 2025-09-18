@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Warrior",
+    "level": 1,
+    "maxHp": 100,
+    "maxMp": 30,
+    "atk": 15,
+    "def": 10,
+    "skills": [1, 2]
+  },
+  {
+    "id": 2,
+    "name": "Mage",
+    "level": 1,
+    "maxHp": 80,
+    "maxMp": 50,
+    "atk": 10,
+    "def": 8,
+    "skills": [3, 4]
+  },
+  {
+    "id": 3,
+    "name": "Archer",
+    "level": 1,
+    "maxHp": 90,
+    "maxMp": 40,
+    "atk": 12,
+    "def": 9,
+    "skills": [5, 6]
+  }
+]
